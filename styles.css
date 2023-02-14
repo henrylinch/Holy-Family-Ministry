@@ -1,0 +1,295 @@
+
+body {
+  margin: 0 auto;
+  background-color: #fefefe;
+  color: snow;
+}
+
+body.dark-mode {
+  background-color: #0d1b2a;
+  color: #0a0908;
+}
+
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.toggle {
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+}
+
+.main-section {
+  margin: 0 auto;
+  padding: 10px 0px;
+  background-color: rgb(31, 28, 28);
+}
+
+.hero {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#content {
+  overflow: auto;
+}
+
+#nav {
+  text-align: center;
+}
+
+#nav,
+#feature,
+#footer {
+  margin: 1%;
+}
+
+.column1,
+.column2,
+.column3 {
+  width: 31.3%;
+  float: left;
+  margin: 1%;
+}
+
+.column3 {
+  margin-right: 0%;
+}
+
+li {
+  display: inline;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+#nav a {
+  text-decoration: none;
+  color: lightseagreen;
+  font-weight: bold;
+}
+
+#footer {
+  background-color: rgb(31, 28, 28);
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#feature {
+  height: 100%;
+  margin-bottom: 1em;
+  background-color: rgb(179, 170, 170);
+  padding: 10px;
+  padding-top: 0.5px;
+}
+
+#feature p {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.article {
+  height: 10em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: rgb(11, 240, 228);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 40px;
+  color: chartreuse;
+  letter-spacing: 2px;
+  word-spacing: 7px;
+}
+
+.main {
+  text-align: center;
+}
+
+.also {
+  font-size: 20px;
+  margin-top: 0;
+  background-color: rgb(16, 150, 143);
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.feature p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.read-more {
+  color: chartreuse;
+}
+
+#next {
+  font-weight: bold;
+  color: #0a0908;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  font-family: "Segoe UI";
+}
+
+.text {
+  width: 30%;
+  height: 20px;
+}
+
+.button {
+  width: 70px;
+  padding: 5px 10px;
+  border: none;
+  background-color: rgb(10, 180, 172);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.button:hover {
+  background-color: rgb(45, 197, 189);
+}
+
+.button2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background-color: #09b909;
+  border-style: none;
+  width: 70px;
+}
+
+.button2:hover {
+  background-color: #13d813;
+}
+
+.field1 {
+  word-spacing: 0.1em;
+  background-image: url(water.jpg);
+  box-sizing: border-box;
+  background-position: top bottom;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.leg {
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.tel-field {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+
+
+
+/*This is for the mode, dark mode and light mode*/
+
+.mode {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Calibri, sans-serif;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0a0908;
+  color: white;
+  border-radius: 50px;
+  margin: 1% 1% 0 60%;
+}
+
+.radios {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 2px;
+  background-color: #0d1b2a;
+  border: solid 2px white;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.off {
+  background-color: grey;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+
+.on {
+  background-color: grey;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  visibility: hidden;
+}
+
+.radios-bg {
+  background-color: white;
+  border: solid 2px #0a0908;
+}
+
+.hide-off {
+  visibility: hidden;
+}
+
+.show-on {
+  visibility: visible;
+}
+
+.mode::before {
+  content: 'Dark mode 🗙';
+}
+
+.mode-after::before {
+  content: 'Dark mode 🗸';
+}
+
+/*For the <hr>*/
+.main-2 {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+
+.ruler {
+  margin-top: 0;
+  width: 100%;
+  height: 5px;
+  border: none;
+  background-color:rgb(10, 180, 172);
+  animation: play 5s infinite;
+}
+
+@keyframes play {
+  0%{width: 0%;}
+  100%{width: 100%;}
+}
+
+
